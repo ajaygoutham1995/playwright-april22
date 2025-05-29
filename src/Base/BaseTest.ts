@@ -1,5 +1,5 @@
-import {test as basetest} from '@playwright/test';
-import { DashBoard } from '../pages/DashBoard';
+import { test as basetest } from '@playwright/test';
+import { DashBoard } from '../Pages/Dashboard';
 
 
 export const test = basetest.extend<{
@@ -10,11 +10,11 @@ export const test = basetest.extend<{
     dashBoard: async ({ page }, use) => {
         await use(new DashBoard(page));
     },
-    sharedData: [async ({}, use) => {
+    sharedData: [async ({ }, use: (data: any) => Promise<void>) => {
         const data = {}
         await use(data);
 
-    },{worker: true,auto:true}]
+    }, { worker: true, auto: true }]
 
 
 })

@@ -1,0 +1,10 @@
+{
+   "user": {
+        "name": "{{name}}",
+        "id": 1234
+   },
+   "userTwo": {
+        "name": "{{name}}",
+        "id": 1
+   }
+}
