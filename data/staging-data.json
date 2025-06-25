@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "username": "staging-user1", "password": "staging-pass1" },
+    { "username": "staging-user2", "password": "staging-pass2" }
+  ],
+  "testCases": {
+    "todoItems": ["write a report", "test the app"]
+  }
+}

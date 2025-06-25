@@ -4,17 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"npx playwright test ./tests/alltest.spec.ts --headed"
+    "test": "npx playwright test ./tests/alltest.spec.ts --headed --project=Chrome",
+    "ui-mode": "npx playwright test ./tests/alltest.spec.ts --ui",
+    "test-qa":"npx cross-env ENV=qa playwright test ./tests/env.spec.ts",
+    "test-stage":"npx cross-env ENV=staging playwright test ./tests/env.spec.ts",
+    "test-prod":"npx cross-env ENV=prod playwright test ./tests/env.spec.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.53.0",
     "@types/node": "^22.15.18",
+    "dotenv": "^16.5.0",
     "handlebars": "^4.7.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "playwright": "^1.53.0"
   }
 }

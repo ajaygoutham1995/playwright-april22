@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "username": "prod-user1", "password": "prod-pass1" },
+    { "username": "prod-user2", "password": "prod-pass2" }
+  ],
+  "testCases": {
+    "todoItems": ["deploy to production", "monitor logs"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "username": "qa-user1", "password": "qa-pass1" },
+    { "username": "qa-user2", "password": "qa-pass2" }
+  ],
+  "testCases": {
+    "todoItems": ["buy some cheese", "feed the cat"]
+  }
+}
